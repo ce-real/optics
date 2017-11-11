@@ -1,0 +1,77 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+*{
+  font-family: Helvetica;
+}
+
+p{
+  font-size: 0.77rem;
+}
+
+header{
+  height: 17rem;
+}
+
+.top, .container{
+  background-color: cadetblue;
+  color: white;
+  width: 100%;
+}
+
+.container h2{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.desktab, .foot-txt{
+  display: none;
+}
+
+.jumbotron{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: 20%;
+}
+
+.banner{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+}
+
+.banner h1{
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logos{
+  display: flex;
+  padding-top: 3.77rem;
+  padding-bottom: 3.77rem;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.philosophy{
+  margin-bottom: 4rem;
+}
+
+footer{
+  justify-content: center;
+}
+
+.foot-txt{
+  display: none;
+}
