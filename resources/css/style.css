@@ -9,6 +9,7 @@ html{
 
 p{
   font-size: 0.77rem;
+  margin-top: 1rem;
 }
 
 header{
@@ -21,6 +22,17 @@ header{
   width: 100%;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.top{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container h2{
   text-transform: uppercase;
   font-size: 1rem;
@@ -31,8 +43,13 @@ header{
   display: none;
 }
 
-.jumbotron{
+.mobile{
+  padding-right: 2rem;
+}
+
+header{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
   background-position: 20%;
 }
 
@@ -41,6 +58,7 @@ header{
   width: 100%;
   background-color: white;
   justify-content: center;
+  margin-top: 9rem;
 }
 
 .banner h1{
@@ -48,8 +66,13 @@ header{
   color: black;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.top img{
+  height: 1.5rem;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 .logos{
@@ -57,6 +80,33 @@ header{
   padding-top: 3.77rem;
   padding-bottom: 3.77rem;
   flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.exams, .fittings, .delivery{
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  height: 8rem;
+  width: 5rem;
+}
+
+
+.exams img{
+  width: 3.5rem;
+  height: auto;
+  margin: 0px auto;
+}
+
+.fittings img, .delivery img{
+  width: 5rem;
+  height: auto;
+}
+
+.fittings{
+  padding-top: 1.54rem;
+  padding-bottom: 1.54rem;
 }
 
 .info{
@@ -64,12 +114,26 @@ header{
   flex-flow: column wrap;
 }
 
-.philosophy{
+.philosophy, .appointments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 footer{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: azure;
+  height: 9.5rem;
+  width: 100%;
+}
+
+footer img{
+  height: 1.5rem;
 }
 
 .foot-txt{
