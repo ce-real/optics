@@ -141,7 +141,7 @@ footer img{
 
 /* Tablet version */
 
-@media only screen and (min-width: 768px) and (max-width: 1600px){
+@media only screen and (min-width: 768px){
   .desktab, .foot-txt{
     display: inline;
   }
@@ -194,5 +194,20 @@ footer img{
   }
   .container{
     padding: 0.5rem auto 0.5rem 1.25rem;
+  }
+}
+
+/* Desktop version */
+
+@media only screen and (min-width: 1024px){
+  .site{
+    max-width: 960px;
+    margin: 0px auto;
+  }
+  header .site{
+    margin-top: 1rem;
+  }
+  header{
+    background-position: center;
   }
 }
