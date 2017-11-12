@@ -1,25 +1,21 @@
 html{
   font-size: 18px;
   line-height: 1.4;
-}
-
-@media only screen and (max-width: 768px;){
-  html{
-    font-size: 36px:
-  }
-}
-
-*{
   font-family: Helvetica;
 }
 
+/* Mobile version */
+
 p{
   font-size: 0.77rem;
-  margin-top: 1rem;
+  margin: 0px auto;
 }
 
 header{
   height: 17rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: 20%;
 }
 
 .top, .container{
@@ -31,6 +27,7 @@ header{
 .container{
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .top{
@@ -51,12 +48,6 @@ header{
 
 .mobile{
   padding-right: 2rem;
-}
-
-header{
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
-  background-size: cover;
-  background-position: 20%;
 }
 
 .banner{
@@ -102,12 +93,13 @@ header{
 .exams img{
   width: 3.5rem;
   height: auto;
-  margin: 0px auto;
+  margin: 0px auto 1rem auto;
 }
 
 .fittings img, .delivery img{
   width: 5rem;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 .fittings{
@@ -140,8 +132,67 @@ footer{
 
 footer img{
   height: 1.5rem;
+  margin-right: 1rem;
 }
 
 .foot-txt{
   display: none;
+}
+
+/* Tablet version */
+
+@media only screen and (min-width: 768px) and (max-width: 1600px){
+  .desktab, .foot-txt{
+    display: inline;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .top{
+    justify-content: flex-start;
+  }
+  nav{
+    justify-content: flex-end;
+  }
+  .mobile{
+    display: none;
+  }
+  .banner{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    max-width: 25rem;
+    align-items: center;
+  }
+  .banner h1{
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+  header{
+    height: 22rem;
+    justify-content: space-around;
+  }
+  nav{
+    justify-content: flex-end;
+  }
+  .logos{
+    flex-direction: row;
+    align-items: center;
+  }
+  .exams p, .fittings p, .delivery p{
+    align-items: flex-end;
+  }
+  .info{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .philosophy, .appointments{
+    max-width: 35%;
+  }
+  .philosophy{
+    margin-right: 5%;
+  }
+  .container{
+    padding: 0.5rem auto 0.5rem 1.25rem;
+  }
 }
